@@ -1,0 +1,14 @@
+2021-03-12:
+-Official publication of V1.0
+-Added native support for running script of FFTs
+
+
+2021-03-12:
+Version 1.1
+-Added functionality to be able to change the preset limits through pressing alt when running the script.
+-Changed from using numpy.median() to using numpy.nanmedian() in order to remove unwanted increase in intensity as the radius approaches the edges of the image.
+-Changed from calculating the median column by column through a for loop to using native numpy functions over the whole image, resulting in MedianPy being called once instead of 1600 times. 
+
+2021-06-16
+Version 1.2
+-Attempted to fix bug where the median becomes negative.
